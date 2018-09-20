@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Linked Page</title>
+<style>
+.dateP{
+	margin: 0;
+	background-color: skyblue;
+	font-size: 20px;
+	color:black;
+}
+#inputText{
+	display: block;
+	width:400px;
+	height:100px;
+	margin-bottom: 20px;
+}
+#imageContainer{
+	width:1000px;
+	height:450px;
+	background-color: lightgray;
+	margin: 10px auto;
+}
+#thumbnailContainer{
+	float:right;
+	width:36%;
+}
+#mainImg{
+
+	width: 600px;
+}
+.thumbImg{
+	box-shadow: -11px -8px 19px -2px rgba(31,30,31,0.76);
+margin-top:20px;
+	width:45%;
+}
+.thumbImg:hover{
+	cursor:pointer;
+}
+#message{
+	position: absolute;
+	top:200px;
+	left: 30vw;
+	height: 400px;
+	width: 300px;
+	background-color:red;
+	text-align: center;
+
+}
+#message h1{
+	margin-bottom: 80px;
+}
+#message div{
+	background-color: white;
+	width: 100px;
+	height: 65px;
+	line-height: 65px;
+	border: solid 2px red;
+	margin:50px auto;
+}
+#message div:hover{
+	cursor: pointer;
+	background-color:green;
+	color: white;
+}
+#bigmessage{
+	display: none;
+	top:0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	background-color:#00000099;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="timer">How long have I been here:0:00 minutes</h1>
+<h1 id="mainHeader"> you found me</h1>
+<h2>Header Number 2</h2>
+<h2>Header Number 2</h2>
+<h2>Header Number 2</h2>
+
+<h3 class="smallHead">Another Header</h3>
+<h4 class="smallHead">Another Header</h4>
+<h5 class="smallHead">Another Header</h5>
+
+
+<p class ="smallHead">Hello There</p>
+<p class = "smallHead"> Its ME</p>
+<div id="imageContainer">
+	<img id="mainImg"src="./img/mac.jpeg">
+	<div id="thumbnailContainer">
+		<img class="thumbImg"id="img0"src="./img/man.jpeg"onclick="ChangeImage(this)">
+		<img class="thumbImg"id="img1"src="./img/dev.jpeg"onclick="ChangeImage(this)">
+		<img class="thumbImg"id="img2"src="./img/web.jpg"onclick="ChangeImage(this)">
+		<img class="thumbImg"id="img3"src="./img/google.jpeg"onclick="ChangeImage(this)">
+		<img class="thumbImg"id="img4"src="./img/funnyman.jpeg"onclick="ChangeImage(this)">
+		<img class="thumbImg"id="img5"src="./img/dogs.jpeg"onclick="ChangeImage(this)">
+	</div>
+</div>
+
+
+
+
+<p id ="letterCount">Numbers of letters:0</p>
+<textarea id="inputText" onfocus="InputFocus()"onblur="InputBlur()"onkeydown="LetterCount()"ondblclick="SetSize()"></textarea>
+<div id= "bigmessage">
+<div id= "message">
+	<h1> Thank you for watching</h1>
+	<p>please come back again</p>
+	<div onclick="closeMessage()">close</div>
+</div>
+
+
+
+
+<div id="dateContainer"></div>
+
+<script src="./js/DOM.js"></script>
+</body>
+</html>
