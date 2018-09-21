@@ -1,0 +1,15 @@
+.h1{
+	color:blue;
+}
+.tableData1{
+	width: 50px;
+	height: 50px;
+	border: solid 1px red;
+	background-color:black;
+}
+.tableData2{
+	width: 50px;
+	height: 50px;
+	border:solid 1px black;
+	background-color:white; 
+}
