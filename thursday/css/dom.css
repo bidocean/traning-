@@ -1,0 +1,52 @@
+
+.b1
+{
+	background-color:red;
+	color:white;
+}
+.class1{
+	background-color: pink;
+}
+.class2{
+	background-color: purple;
+}
+
+td
+{
+	width: 50px;
+	height:50px;
+	border: solid 1px black;
+}
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+#myPage{
+    background-color:#8EDAED;
+    width:200px;
+    height:250px;
+    margin-left: 550px;
+    padding: 20px 20px 20px 20px;
+    border-radius:auto ;
+    box-shadow: 5px 5px 8px #ED18F4, 10px 10px 8px #CEED61, 15px 15px 8px #242423;
+}   
+ #error{
+    background-color:red;
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+
+
+
+ }
