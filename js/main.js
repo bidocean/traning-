@@ -40,11 +40,11 @@ for(var i=0; i<10; i++){
 
 
 var myTable=document.getElementById("Data");
-for(var i=0;i<10;i++){
+for(var i=0;i<8;i++){
 	var row=document.createElement("tr");
 	myTable.append(row);
 	
-	for(var ii=0; ii<10; ii++){
+	for(var ii=0; ii<8; ii++){
 		var col=document.createElement("td");
 		//Style rules for even rows
 		if(i%2==0){			
@@ -215,6 +215,7 @@ function include(str,char){
    			var count=0;
    			while(this.val[count]!=undefined){
    				count++;
+
    			}
    	console.log(count);
    }
@@ -227,6 +228,11 @@ function include(str,char){
   myString.lastIndex("y")
   myString.modSlice(1,4);
   console.log(myString.val);
+
+
+
+
+  
 
 
 
